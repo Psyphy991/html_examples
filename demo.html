@@ -1,0 +1,45 @@
+<html>
+    <head>
+       <title>SCITECH HUB | Form Validation With Javascript</title>
+
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+       <link href="validate.css" rel="stylesheet">       
+    </head>
+    <body>     
+    <div class="container">
+        <h1 class="text-center text-success">Registration Form</h1>
+        <div class= " col-lg-6 m-auto d-block">  
+     <form action="submit.html" method="post" class="simpleForm" onsubmit="return ValidateForm()">
+
+        <div>
+
+            <input type="text" id="username" placeholder="User ">
+         <p class="error"></p></div>
+
+         <div><input type="number" id="phoneNum" placeholder="Phone Number">
+         <p class="error"></p></div>
+
+         <div><input type="Email" id="mail" placeholder="Email">
+         <p class="error"></p></div>
+         
+         
+         <div><input type="password" id="password" placeholder="Password">
+         <p class="error"></p></div>
+         
+         <div><input type="password" id="confirm_password" placeholder="Confirm Password">
+         <p class="error"></p></div>
+         
+         <button type="submit"  class="btn btn-success">Register</button>
+     </form>
+
+ </div>
+
+</div>
+     <script src="validate.js"></script>
+    </body>
+</html>
